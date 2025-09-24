@@ -1,15 +1,21 @@
-import { useState } from 'react'
-import './App.css'
-import Hero from './components/Hero/Hero.jsx'
+import React from "react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import CoreTeam from "./components/CoreTeam";
+import Events from "./components/Events";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App = () => {
   return (
-    <>
-      <Hero/>
-    </>
-  )
-}
+    <div className="font-sans">
+      <Navbar/>
+      <HeroSection/>
+      <CoreTeam/>
+      <Events/>
+      <Footer/>
+    </div>
+  );
+};
 
-export default App
+export default App;
